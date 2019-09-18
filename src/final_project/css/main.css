@@ -1,0 +1,41 @@
+#bp,#vbox,#gp{  
+    -fx-background-color:linear-gradient(to top,  rgba(6,255,205,1) 0%, rgba(0,195,196,1) 41%);
+}
+#gpBorder,#lstBorder{
+    -fx-border-width:2px;
+    -fx-border-color:black;
+    -fx-border-style:solid;
+
+}
+.combo-box{
+    -fx-font-family:'Open Sans Semibold';
+    -fx-background-color:whitesmoke;
+}
+
+.combo-box-popup .list-cell {    
+    -fx-font-family:'Open Sans Semibold';
+    -fx-background-color: #00c3c4;
+}
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-text-fill: white;
+}
+
+.combo-box-base:hover{
+    -fx-border-width: 0.1px;
+    -fx-border-color:#306ee5;
+}
+.list-view {
+    -fx-font-family:'Open Sans Semibold';
+}
+
+Button{
+    -fx-background-color:  #e6e6e6;
+    -fx-text-fill:black;
+}
+Button:hover{
+    -fx-background-color: white;
+}
+TextField{
+    -fx-font-family:'Open Sans Semibold';
+}
+

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" prefHeight="615.0" prefWidth="940.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_project.FXMLMainPageController">
+    <stylesheets>
+        <URL value="@css/main.css" />
+    </stylesheets>
+    <BorderPane.margin>
+        <Insets top="35.0" />
+    </BorderPane.margin>
+    <left>
+        <VBox>
+            <GridPane id="gpBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="192.0">
+            
+                <Label text="Shifts" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Open Sans Semibold" size="16.0" />
+                    </font>
+                </Label>
+            
+                <ListView fx:id="lstShift" maxWidth="-Infinity" prefHeight="322.0" prefWidth="158.0" GridPane.rowIndex="2" GridPane.rowSpan="9">
+                    <GridPane.margin>
+                        <Insets top="10.0" />
+                    </GridPane.margin>
+                </ListView>
+            
+                <BorderPane.margin>
+                    <Insets top="35.0" />
+                </BorderPane.margin>
+            
+                <VBox.margin>
+                    <Insets top="30.0" />
+                </VBox.margin>
+            <columnConstraints>
+               <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+            <padding>
+               <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+           
+            </GridPane>
+            <BorderPane.margin>
+                <Insets left="20.0" />
+            </BorderPane.margin>
+      
+        </VBox>
+    </left>
+    
+    <center>
+        <VBox prefHeight="361.0" prefWidth="688.0" spacing="20.0" BorderPane.alignment="CENTER">
+              
+            <children>
+                
+                <GridPane id="gpBorder" prefWidth="750.0" vgap="25.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="NEVER" maxWidth="135.8000244140625" minWidth="126.19998779296877" prefWidth="135.8000244140625" />
+                        <ColumnConstraints hgrow="NEVER" maxWidth="165.599951171875" minWidth="78.4" prefWidth="123.19999999999999" />
+                        <ColumnConstraints hgrow="NEVER" maxWidth="278.0" minWidth="123.80000000000001" prefWidth="153.60000000000002" />
+                        <ColumnConstraints hgrow="NEVER" maxWidth="265.0" minWidth="172.0" prefWidth="177.80002441406248" />
+                    </columnConstraints>
+                    
+                    <children>
+                        
+                        <Label text="Job Title:">
+                            <font>
+                                <Font name="Open Sans Semibold" size="16.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="cmbJT" prefHeight="26.0" prefWidth="267.0" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                        </ComboBox>
+                        
+                        <Label text="Date:" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Open Sans Semibold" size="16.0" />
+                            </font>
+                        </Label>
+                        
+                        <ComboBox fx:id="cmbYear" prefHeight="26.0" prefWidth="110.0" promptText="Year" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                        </ComboBox>
+                        
+                        <ComboBox fx:id="cmbMonth" prefHeight="26.0" prefWidth="145.0" promptText="Month" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                        </ComboBox>
+                        
+                        <ComboBox fx:id="cmbDate" prefHeight="26.0" prefWidth="110.0" promptText="Date" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                        </ComboBox>
+                        
+                        <Label text="Day:" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Open Sans Semibold" size="16.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="cmbDay" prefHeight="26.0" prefWidth="233.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                        </ComboBox>    
+                        
+                        <Label text="Shift start time:" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Open Sans Semibold" size="16.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="cmbStart" prefHeight="26.0" prefWidth="110.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <ComboBox fx:id="cmbAMPM0" prefWidth="110.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        
+                        <Label text="Shift end time:" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Open Sans Semibold" size="16.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="cmbEnd" prefHeight="26.0" prefWidth="110.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />         
+                        <ComboBox fx:id="cmbAMPM1" prefWidth="110.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+                        <Label text="Hours Worked:" GridPane.rowIndex="5">
+                            <font>
+                                <Font name="Open Sans Semibold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="lblHrsWorked" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                            <font>
+                                <Font name="Open Sans Semibold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label text="Wages Earned:" GridPane.rowIndex="6">
+                            <font>
+                                <Font name="Open Sans Semibold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="lblWages" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                            <font>
+                                <Font name="Open Sans Semibold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label GridPane.rowIndex="7" />
+                        <Label fx:id="lblPayRate" prefHeight="20.0" prefWidth="608.0" GridPane.columnSpan="4" GridPane.rowIndex="7">
+                            <font>
+                                <Font name="Open Sans Semibold" size="16.0" />
+                            </font>
+                        </Label>
+                 
+                    </children>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+ 
+                 
+                </GridPane>
+                <GridPane id="gpBorder" hgap="75.0" prefHeight="62.0" prefWidth="645.0" vgap="10.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="NEVER" />
+                        <ColumnConstraints hgrow="NEVER" />
+                        <ColumnConstraints hgrow="NEVER" />
+                        <ColumnConstraints hgrow="NEVER" />
+                    </columnConstraints>      
+                    <children>
+                        <Button fx:id="btnAddShift" mnemonicParsing="true" prefHeight="30.0" prefWidth="105.0" text="Add _Shift" GridPane.halignment="CENTER">
+                            <font>
+                                <Font name="Open Sans Semibold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnAddJob" mnemonicParsing="true" prefWidth="105.0" text="Add _Job" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                            <font>
+                                <Font name="Open Sans Semibold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnSave" mnemonicParsing="true" prefHeight="26.0" prefWidth="105.0" text="Sa_ve" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                            <font>
+                                <Font name="Open Sans Semibold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnDel" mnemonicParsing="true" prefWidth="105.0" text="_Delete" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                            <font>
+                                <Font name="Open Sans Semibold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnEdit" mnemonicParsing="true" prefWidth="105.0" text="_Edit" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Open Sans Semibold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnSearch" mnemonicParsing="true" prefWidth="105.0" text="Se_arch" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Open Sans Semibold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnCancel" mnemonicParsing="true" prefWidth="105.0" text="_Cancel" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Open Sans Semibold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnExit" mnemonicParsing="true" prefWidth="105.0" text="E_xit" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Open Sans Semibold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+
+                    <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                    </padding>
+             
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+                   
+                </GridPane>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="30" left="30.0" top="30.0" />
+            </BorderPane.margin>
+           
+        </VBox>
+    </center>
+   <padding>
+      <Insets right="20.0" />
+   </padding>
+</BorderPane>
